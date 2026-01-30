@@ -24,7 +24,8 @@ client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
 # Resend configuration
-resend.api_key = os.environ.get('RESEND_API_KEY', '')
+RESEND_API_KEY = os.environ.get('RESEND_API_KEY', '')
+resend.api_key = RESEND_API_KEY
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'onboarding@resend.dev')
 
 # JWT configuration
@@ -262,7 +263,11 @@ async def create_booking(booking_data: BookingCreate, current_user: User = Depen
     
     await db.bookings.insert_one(doc)
     
-    # Send confirmation email
+    # Send confirmation email (only if Resend is configured)
+    if not RESEND_API_KEY:
+        logger.info("RESEND_API_KEY not set. Skipping confirmation email.")
+        return booking
+
     try:
         email_html = f"""
         <html>
