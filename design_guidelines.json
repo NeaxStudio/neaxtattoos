@@ -1,0 +1,115 @@
+{
+  "design_system": {
+    "brand_identity": {
+      "name": "Neax Tattoos",
+      "tagline": "Ink is Eternal. Art is Pain.",
+      "tone": "Rebellious, Sophisticated, Intimate, Raw",
+      "theme_mode": "dark",
+      "archetype": "The Alchemist (Transformation & Art)"
+    },
+    "typography": {
+      "primary_font": {
+        "name": "Syne",
+        "usage": "Headings, Hero Text, Big Numbers",
+        "weights": ["700", "800"],
+        "cdn_import": "@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');"
+      },
+      "secondary_font": {
+        "name": "Manrope",
+        "usage": "Body text, UI elements, Booking forms",
+        "weights": ["400", "500", "600"],
+        "cdn_import": "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');"
+      },
+      "accent_font": {
+        "name": "Cinzel",
+        "usage": "Small labels, Dates, 'Est. 2024'",
+        "weights": ["400", "700"],
+        "cdn_import": "@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": "#050505",
+        "surface": "#0F0F0F",
+        "surface_highlight": "#1A1A1A",
+        "text_primary": "#E5E5E5",
+        "text_secondary": "#A3A3A3",
+        "accent": "#D4AF37",
+        "error": "#7F1D1D",
+        "success": "#14532D"
+      },
+      "gradients": {
+        "hero_overlay": "linear-gradient(to bottom, rgba(5,5,5,0) 0%, rgba(5,5,5,1) 100%)",
+        "gold_shimmer": "linear-gradient(45deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%)"
+      }
+    },
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_gap": "py-24 md:py-32",
+      "grid_gap": "gap-4 md:gap-8"
+    },
+    "visual_enhancers": {
+      "texture": "url('https://grainy-gradients.vercel.app/noise.svg')",
+      "glassmorphism": "backdrop-blur-xl bg-black/40 border border-white/10",
+      "borders": "border border-white/5",
+      "shadows": "shadow-[0_0_40px_-10px_rgba(0,0,0,0.8)]"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-white text-black hover:bg-gray-200 rounded-none px-8 py-4 font-bold tracking-widest uppercase text-sm transition-all duration-300 hover:tracking-[0.2em]",
+      "secondary": "bg-transparent border border-white/20 text-white hover:bg-white/5 rounded-none px-8 py-4 font-medium tracking-wider uppercase text-sm transition-all"
+    },
+    "cards": {
+      "artist_card": "group relative overflow-hidden bg-neutral-900/50 border border-white/5 hover:border-white/20 transition-all duration-500",
+      "booking_step": "bg-neutral-900 border border-white/10 p-6 md:p-8"
+    },
+    "inputs": {
+      "default": "bg-neutral-950 border-white/10 focus:border-white/30 text-white placeholder:text-neutral-600 rounded-none h-12"
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "hero": "Full screen video/image background with heavy bottom fade. Text bottom-left aligned. Massive 'Syne' typography.",
+      "gallery": "Masonry/Bento grid. Asymmetric columns. Images reveal artist name on hover.",
+      "booking_cta": "Sticky bottom bar on mobile, or floating glass card on desktop."
+    },
+    "booking_flow": {
+      "structure": "Multi-step wizard. Step 1: Service (Big Cards). Step 2: Artist (Avatars). Step 3: Calendar (Custom Shadcn). Step 4: Form.",
+      "vibe": "Clinical but dark. High contrast for readability."
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1604449325317-4967c715538a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwyfHx0YXR0b28lMjBhcnRpc3QlMjB3b3JraW5nJTIwY2xvc2UlMjB1cCUyMGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8fHwxNzY5Nzc3OTk0fDA&ixlib=rb-4.1.0&q=85",
+      "studio_interior": "https://images.unsplash.com/photo-1644165571949-3455b964db98?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxlZGd5JTIwaW5kdXN0cmlhbCUyMHRhdHRvbyUyMHN0dWRpbyUyMGludGVyaW9yJTIwZGFya3xlbnwwfHx8fDE3Njk3Nzc5OTZ8MA&ixlib=rb-4.1.0&q=85",
+      "portfolio_1": "https://images.unsplash.com/photo-1769605767707-80909ec160cc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwxfHxhcnRpc3RpYyUyMHRhdHRvbyUyMHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzY5Nzc4MDAwfDA&ixlib=rb-4.1.0&q=85",
+      "portfolio_2": "https://images.unsplash.com/photo-1764698072603-2dd6f166513e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHw0fHxhcnRpc3RpYyUyMHRhdHRvbyUyMHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzY5Nzc4MDAwfDA&ixlib=rb-4.1.0&q=85",
+      "portfolio_3": "https://images.unsplash.com/photo-1700133653790-9e5da9041167?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwzfHx0YXR0b28lMjBhcnRpc3QlMjB3b3JraW5nJTIwY2xvc2UlMjB1cCUyMGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8fHwxNzY5Nzc3OTk0fDA&ixlib=rb-4.1.0&q=85",
+      "artist_1": "https://images.unsplash.com/photo-1655960556432-b74f6ff0a54b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHx0YXR0b28lMjBhcnRpc3QlMjB3b3JraW5nJTIwY2xvc2UlMjB1cCUyMGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8fHwxNzY5Nzc3OTk0fDA&ixlib=rb-4.1.0&q=85",
+      "artist_2": "https://images.unsplash.com/photo-1767887874488-5f715c7db794?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwzfHxhcnRpc3RpYyUyMHRhdHRvbyUyMHBvcnRyYWl0JTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzY5Nzc4MDAwfDA&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": "Lucide React (Stroke width 1.5px)"
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'framer-motion' and 'clsx' 'tailwind-merge' immediately.",
+    "2. FONTS: Add the Google Fonts imports to 'index.css' at the very top.",
+    "3. THEME: Force Dark Mode. Add 'dark' class to the html or body tag permanently. Do not create a toggle.",
+    "4. LAYOUT: The 'Booking System' is the core product. It must be accessible from the Hero CTA.",
+    "5. ANIMATION: Use 'framer-motion' for page transitions and scroll reveals. Elements should 'fade up' with a slight delay.",
+    "6. BOOKING LOGIC: Mock the backend calls for now, but build the UI to handle: Service Selection -> Artist Selection -> Date/Time -> User Details.",
+    "7. CRITICAL: Do not use default Shadcn cards. Remove shadows, add 1px white/10 borders, make backgrounds transparent or black.",
+    "8. IMAGES: Use the provided URLs. Do not use placeholders.",
+    "9. TESTIDS: Add data-testid to all interactive elements (buttons, inputs, cards)."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop': No generic centered text, no purple/teal gradients.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures, noise overlays, custom cursors.",
+    "Use 'sonner' for toasts."
+  ]
+}

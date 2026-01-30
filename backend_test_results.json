@@ -1,0 +1,129 @@
+{
+  "summary": {
+    "tests_run": 20,
+    "tests_passed": 20,
+    "success_rate": 100.0
+  },
+  "results": [
+    {
+      "test": "Root API Endpoint",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:17.845603"
+    },
+    {
+      "test": "Seed Data",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:17.885765"
+    },
+    {
+      "test": "Get Artists",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:17.923342"
+    },
+    {
+      "test": "Artists Count Validation",
+      "success": true,
+      "details": "Found 3 artists",
+      "timestamp": "2026-01-30T13:09:17.923793"
+    },
+    {
+      "test": "Get Services",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:17.961403"
+    },
+    {
+      "test": "Services Count Validation",
+      "success": true,
+      "details": "Found 4 services",
+      "timestamp": "2026-01-30T13:09:17.961942"
+    },
+    {
+      "test": "User Registration",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:18.248589"
+    },
+    {
+      "test": "Registration Token Validation",
+      "success": true,
+      "details": "Token and user data received",
+      "timestamp": "2026-01-30T13:09:18.249215"
+    },
+    {
+      "test": "Get Current User",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:18.285702"
+    },
+    {
+      "test": "Pre-Login Registration",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:18.545438"
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:18.804444"
+    },
+    {
+      "test": "Login Token Validation",
+      "success": true,
+      "details": "Login successful with token",
+      "timestamp": "2026-01-30T13:09:18.805163"
+    },
+    {
+      "test": "Get Artists",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:18.840405"
+    },
+    {
+      "test": "Artists Count Validation",
+      "success": true,
+      "details": "Found 3 artists",
+      "timestamp": "2026-01-30T13:09:18.840838"
+    },
+    {
+      "test": "Get Services",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:18.887121"
+    },
+    {
+      "test": "Services Count Validation",
+      "success": true,
+      "details": "Found 4 services",
+      "timestamp": "2026-01-30T13:09:18.887633"
+    },
+    {
+      "test": "Create Booking",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:19.119853"
+    },
+    {
+      "test": "Get My Bookings",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:19.197572"
+    },
+    {
+      "test": "Get All Bookings",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-30T13:09:19.230999"
+    },
+    {
+      "test": "Invalid Login",
+      "success": true,
+      "details": "Status: 401",
+      "timestamp": "2026-01-30T13:09:19.266174"
+    }
+  ]
+}
